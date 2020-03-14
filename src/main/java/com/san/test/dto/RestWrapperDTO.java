@@ -1,4 +1,4 @@
-package com.san.test.friend;
+package com.san.test.dto;
 
 /**
  * @author sanwailwin on ၁၃-၀၃-၂၀

@@ -1,5 +1,7 @@
-package com.san.test.friend;
+package com.san.test.entity;
 
+import com.san.test.enums.UserType;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,11 +14,12 @@ import javax.validation.constraints.*;
 @Getter
 @Setter
 @Entity
-@Table(name = "user")
+@Table(name = "user1")
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @ApiModelProperty(required = false, hidden = true)
     private Long id;
 
     @NotBlank

@@ -1,4 +1,4 @@
-package com.san.test.friend;
+package com.san.test.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
@@ -13,14 +13,16 @@ import java.util.List;
  */
 @Setter
 @Getter
-@JsonInclude(JsonInclude.Include.NON_NULL
-)@NoArgsConstructor
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@NoArgsConstructor
 @AllArgsConstructor
 public class FriendDto {
 
     private Boolean success = false;
 
     private List<String> friends;
+
+    private List<String> recipients;
 
     private Integer count;
 }

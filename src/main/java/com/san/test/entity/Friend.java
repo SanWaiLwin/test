@@ -1,12 +1,10 @@
-package com.san.test.friend;
+package com.san.test.entity;
 
+import com.san.test.enums.UserType;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
 
 /**
  * @author sanwailwin on ၁၂-၀၃-၂၀
@@ -26,4 +24,7 @@ public class Friend {
 
     @ManyToOne
     private User user2;
+
+    @Enumerated(EnumType.STRING)
+    private UserType userType;
 }

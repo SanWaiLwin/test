@@ -1,4 +1,4 @@
-package com.san.test.friend;
+package com.san.test.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
@@ -16,7 +16,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class SubscribeNotiDto {
 
-    private String requestor;
+    private String requester;
 
     private String target;
 }

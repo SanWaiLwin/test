@@ -1,10 +1,9 @@
-package com.san.test.friend;
+package com.san.test.repository;
 
+import com.san.test.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import org.springframework.web.bind.annotation.RequestBody;
 
-import java.util.List;
 import java.util.Optional;
 
 /**

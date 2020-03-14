@@ -1,10 +1,10 @@
-package com.san.test.friend;
+package com.san.test.entity;
 
+import com.san.test.entity.User;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
 
 /**
  * @author sanwailwin on ၁၃-၀၃-၂၀
@@ -20,8 +20,10 @@ public class SubscribeNoti {
     private Long id;
 
     @ManyToOne
-    private User requestor;
+    private User requester;
 
     @ManyToOne
-    private User targer;
+    private User target;
+
+    private Boolean isNotify = true;
 }
